@@ -1,0 +1,322 @@
+/* 公共样式里面包含版心宽度、清除浮动、页面文字颜色等等公共样式 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 快捷导航模块 */
+.shorcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+
+}
+
+
+.shorcut ul li {
+    float: left;
+}
+
+.fl {
+    float: left;
+    font-size: 14px;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+.fr {
+    float: right;
+    font-size: 12px;
+}
+
+
+
+.shorcut .fr ul li:nth-child(even) {
+    width: 0.5px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon::after {
+    margin-left: 10px;
+    font-family: iconfont;
+    content: "\e69a";
+}
+
+/* 快捷导航结束 */
+
+
+.header {
+    position: relative;
+    height: 106px;
+    /* background-color: pink; */
+}
+
+.logo {
+    position: absolute;
+    width: 219px;
+    height: 55px;
+    top: 25px;
+    left: 0;
+}
+
+.logo a {
+    display: block;
+    width: 219px;
+    height: 55px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+    /* 也可以用text-indent和overflow：hidden隐藏文字 */
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 347px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 33px;
+    padding-left: 10px;
+
+
+}
+
+.search button {
+    position: absolute;
+    right: 0px;
+    float: left;
+    width: 81px;
+    height: 33px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 347px;
+
+}
+
+.hotwords a {
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.shopcar {
+    width: 140px;
+    height: 36px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    border: 1px solid #dfdfdf;
+}
+
+.shopcar p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+
+}
+
+.shopcar p::before {
+    font-family: "iconfont";
+    content: "\e65e";
+    color: red;
+    margin-right: 6px;
+}
+
+.shopcar p::after {
+    font-family: "iconfont";
+    content: "\e65f";
+    margin-left: 10px;
+}
+
+.shopcar .count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    /* 为了让数字从左往右生成 */
+    background-color: #e60012;
+    color: #fff;
+    border-radius: 7px 7px 7px 0;
+    padding: 0 5px;
+    line-height: 14px;
+}
+
+.nav {
+    height: 46px;
+    margin-top: 24px;
+    border-bottom: 2px solid #b1191a;
+    line-height: 46px;
+}
+
+.dropdown {
+    float: left;
+    height: 46px;
+    width: 210px;
+    background-color: #b1191a;
+
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.dropdown .dd {
+    height: 465px;
+    width: 100%;
+    background-color: #c81623;
+    /* display: none; */
+}
+
+.dropdown .dd ul li {
+    transition: all .3s ease;
+    height: 31px;
+    position: relative;
+    padding-left: 12px;
+
+    line-height: 31px;
+
+}
+
+.dropdown .dd ul li::after {
+
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "iconfont";
+    position: absolute;
+    content: "\e65f";
+    top: 2px;
+    right: 10px;
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.dropdown .dd ul li:hover a {
+    color: #b1191a;
+}
+
+.dropdown .dd ul li:hover {
+    margin-left: 2px;
+    background-color: #fff;
+
+}
+
+
+.navitems ul li {
+    height: 46px;
+    float: left;
+
+
+}
+
+.navitems ul li a {
+    padding: 0 25px;
+    line-height: 46px;
+    height: 46px;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* 底部模块制作start */
+.footer {
+    height: 417px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.footer .mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    padding-left: 35px;
+    float: left;
+    /* background-color: pink; */
+    width: 300px;
+    height: 50px;
+}
+
+.mod_service ul li h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -252px -3px;
+    margin-right: 8px;
+
+}
+
+.service_txt h4 {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.service_txt p {
+    font-size: 12px;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    width: 200px;
+    float: left;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_help dl dd {
+    font-size: 12px;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+
+.mod_copyright {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.mod_copyright .links {
+    margin-bottom: 15px;
+}
+
+.mod_copyright .links a {
+    margin: 0 15px;
+}
+
+.mod_copyright .copyright {
+    line-height: 20px;
+}
